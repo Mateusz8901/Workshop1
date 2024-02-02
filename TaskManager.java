@@ -129,7 +129,7 @@ public class TaskManager {
                 case 2:
                     System.out.println("Enter the index of the task to remove:");
                     int index = scanner.nextInt();
-                    scanner.nextLine(); // consume newline
+                    scanner.nextLine();
 
                     if (index >= 0 && index < tasks.size()) {
                         tasks.remove(index);
@@ -158,7 +158,7 @@ public class TaskManager {
                     break;
 
                 case 4:
-                    saveTasksToFile("tasks.csv");  // Zapis zmian do pliku
+                    saveTasksToFile("tasks.csv");
                     System.out.println("Tasks saved successfully. Exiting...");
                     keepRunning = false;
                     break;
